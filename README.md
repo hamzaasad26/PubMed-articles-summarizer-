@@ -19,6 +19,22 @@ The objective of this project is to create a web application that can summarize 
 - Upload PubMed articles in text format.
 - Generate a summarized version of the article.
 
+- the summarization feature was implemented using LSA (Latent Semantic Analysis) from the sumy library. LSA is an extractive summarization technique that analyzes the relationships between terms and documents to identify the most important sentences for summarization. Here’s a summary of how LSA works in this context:
+
+Initialization:
+
+The text from the uploaded file is parsed and tokenized.
+LSA Summarization:
+
+LSA (Latent Semantic Analysis) is applied using the sumy library's LsaSummarizer.
+It identifies the most relevant sentences based on the underlying structure and context of the text.
+Output:
+
+The summarized text (a few selected sentences) is displayed on the web interface for the user to view.
+LSA is an effective method for extractive summarization because it leverages statistical techniques to identify the sentences that best capture the main ideas of the text. It does not generate new sentences but selects and rearranges existing ones to create a concise summary.
+
+
+
 ## Installation
 
 1. Clone the repository:
