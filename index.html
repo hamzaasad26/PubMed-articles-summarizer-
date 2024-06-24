@@ -7,99 +7,65 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-color: #f0f0f0;
             color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #001f3f;
-            color: #ffffff;
+            margin: 20px;
             padding: 20px;
-            text-align: center;
         }
-
         h1 {
-            margin: 0;
-            font-size: 2.5em;
+            color: #0056b3;
         }
-
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
         form {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        input[type="file"] {
+        label {
+            font-weight: bold;
+        }
+        select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
             margin-bottom: 10px;
         }
-
         input[type="submit"] {
-            background-color: #007bff;
-            color: #ffffff;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: #fff;
             border: none;
-            padding: 10px 20px;
+            border-radius: 4px;
             cursor: pointer;
-            border-radius: 4px;
-            font-size: 1em;
         }
-
         input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #00418c;
         }
-
-        h2 {
-            color: #001f3f;
-        }
-
-        p {
-            background-color: #e6f7ff;
-            padding: 10px;
-            border-radius: 4px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .download-link {
-            display: inline-block;
-            margin-top: 10px;
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 4px;
-            text-decoration: none;
-        }
-
-        .download-link:hover {
-            background-color: #0056b3;
+        .summary {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>PubMed Article Summarizer</h1>
-    </header>
-    <div class="container">
-        <form method="post" enctype="multipart/form-data">
-            <input type="file" name="file" required><br><br>
-            <input type="submit" value="Summarize">
-        </form>
-        {% if original_text %}
+    <h1>PubMed Article Summarizer</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file"><br><br>
+        <label for="summary_length">Select Summary Length:</label><br>
+        <select id="summary_length" name="summary_length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select><br><br>
+        <input type="submit" value="Summarize">
+    </form>
+    {% if original_text %}
+        <div class="summary">
             <h2>Original Article:</h2>
             <p>{{ original_text }}</p>
-            <h2>Preprocessed Article:</h2>
-            <p>{{ preprocessed_text }}</p>
             <h2>Summary:</h2>
             <p>{{ summary }}</p>
-            <a href="/static/preprocessed_article.txt" download class="download-link">Download Preprocessed Article</a>
-        {% endif %}
-    </div>
+        </div>
+    {% endif %}
 </body>
 </html>
