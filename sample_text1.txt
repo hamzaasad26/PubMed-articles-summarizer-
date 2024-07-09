@@ -1,0 +1,11 @@
+Title: The Impact of Community Nutrition Intervention on School-Aged Children's Health in Shiraz, Iran
+
+Background: Malnutrition among school-aged children remains a significant public health challenge in developing countries. This study evaluates the effects of a community nutrition intervention based on an advocacy approach to improve the nutritional status of children in Shiraz, Iran.
+
+Materials and Methods: This case-control nutritional intervention was conducted between 2018 and 2019 among 2,897 primary and secondary school boys and girls (aged 7-13 years) in Shiraz, Iran. The intervention included the provision of nutritious snacks in public schools over a two-year period, along with advocacy-oriented actions to implement and promote the nutritional program. The effectiveness of the intervention was evaluated by comparing pre- and post-intervention growth monitoring indices.
+
+Results: The frequency of children with a body mass index (BMI) below the 5th percentile significantly decreased after the intervention among girls (p = 0.02). No significant changes were observed among boys or the total population. However, the mean of all anthropometric indices showed significant improvement after the intervention in both girls and boys, as well as in the total population. Additionally, the pre- and post-intervention education assessments indicated a significant increase in the average knowledge score of students, from 12.5 ± 3.2 to 16.8 ± 4.3 (p < 0.0001).
+
+Conclusion: This study demonstrates the potential success and scalability of school feeding programs in Iran. Community nutrition interventions based on the advocacy process model are effective in reducing the prevalence of underweight, particularly among female school-aged children. Future research should focus on long-term sustainability and the broader application of such programs to address malnutrition in other regions.
+
+Keywords: Community Nutrition, School-Aged Children, Malnutrition, Intervention, Advocacy, Shiraz, Iran
